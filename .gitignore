@@ -4,3 +4,8 @@ dist/
 keys/private.pem
 *.local
 .DS_Store
+
+# Environment files (keep .env.example as template)
+.env
+.env.*
+!.env.example
