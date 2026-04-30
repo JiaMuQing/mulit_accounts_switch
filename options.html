@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="/src/options/style.css" />
+  </head>
+  <body>
+    <div class="layout-wrap">
+    <header class="topbar">
+      <div class="topbar-left">
+        <img
+          id="options-logo"
+          class="topbar-logo"
+          width="40"
+          height="40"
+          decoding="async"
+          alt=""
+        />
+        <div class="topbar-headings">
+          <span class="topbar-title" data-i18n="pageTitle"></span>
+          <span class="topbar-version" id="ext-version"></span>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <a
+          class="topbar-site-link"
+          id="open-website"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-i18n="openWebsite"
+        ></a>
+        <button type="button" id="topbar-tier-free" class="tier-chip tier-free hidden" data-i18n-title="topBarFreeHint">
+          <span data-i18n="topBarTierFree"></span>
+        </button>
+        <span id="topbar-tier-pro" class="tier-chip tier-pro hidden" data-i18n="topBarTierPro"></span>
+      </div>
+    </header>
+
+    <div class="shell">
+      <nav class="sidebar" id="options-nav" aria-label="">
+        <button type="button" class="nav-btn active" data-panel="sites" data-i18n="menuSites"></button>
+        <button type="button" class="nav-btn" data-panel="groups" data-i18n="menuGroups"></button>
+        <button type="button" class="nav-btn" data-panel="settings" data-i18n="menuSettings"></button>
+        <button type="button" class="nav-btn" data-panel="license" data-i18n="menuLicense"></button>
+      </nav>
+
+      <main class="main-area">
+        <section id="panel-sites" class="panel panel-active" aria-labelledby="sites-heading">
+          <p class="panel-lead" data-i18n="lead"></p>
+          <div class="card">
+            <h2 id="sites-heading">
+              <span data-i18n="sectionSites"></span>
+              <span id="profile-limit" class="badge"></span>
+            </h2>
+            <div class="sites-toolbar">
+              <div class="sites-filter-row">
+                <div class="search-field">
+                  <span class="search-field-icon" aria-hidden="true"></span>
+                  <input
+                    type="search"
+                    id="sites-filter-q"
+                    class="filter-q"
+                    autocomplete="off"
+                    data-i18n-placeholder="filterSitesPlaceholder"
+                  />
+                </div>
+                <label class="filter-group-wrap">
+                  <span class="filter-group-label" data-i18n="filterGroupLabel"></span>
+                  <select id="sites-filter-group" class="filter-group-select"></select>
+                </label>
+              </div>
+              <div id="sites-bulk-row" class="sites-bulk-row hidden">
+                <button
+                  type="button"
+                  id="btn-bulk-enter"
+                  class="btn"
+                  data-i18n="bulkDelete"
+                ></button>
+                <span id="bulk-selection-count" class="sites-bulk-count hidden"></span>
+                <div id="bulk-actions" class="bulk-actions hidden">
+                  <button
+                    type="button"
+                    id="btn-bulk-delete"
+                    class="btn danger"
+                  ></button>
+                  <button
+                    type="button"
+                    id="btn-bulk-cancel"
+                    class="btn"
+                    data-i18n="dialogCancel"
+                  ></button>
+                </div>
+              </div>
+            </div>
+            <div id="profiles-wrap"></div>
+          </div>
+        </section>
+
+        <section id="panel-groups" class="panel" aria-labelledby="groups-heading">
+          <div class="card">
+            <h2 id="groups-heading">
+              <span data-i18n="sectionGroups"></span>
+              <span id="group-limit" class="badge"></span>
+            </h2>
+            <div class="row">
+              <input
+                type="text"
+                id="new-group-name"
+                data-i18n-placeholder="newGroupPlaceholder"
+                maxlength="80"
+              />
+              <button type="button" id="btn-add-group" class="btn primary" data-i18n="addGroup"></button>
+            </div>
+            <ul id="group-list" class="groups"></ul>
+          </div>
+        </section>
+
+        <section id="panel-settings" class="panel" aria-labelledby="settings-heading">
+          <h2 id="settings-heading" class="sr-only" data-i18n="menuSettings"></h2>
+          <div class="card">
+            <h3 data-i18n="sectionLanguage"></h3>
+            <p class="fineprint" data-i18n="languageHint"></p>
+            <label class="field">
+              <span data-i18n="languageLabel"></span>
+              <select id="ui-language"></select>
+            </label>
+          </div>
+          <div class="card">
+            <h3 data-i18n="sectionHost"></h3>
+            <p class="fineprint" data-i18n="hostFineprint"></p>
+            <ul id="granted-list" class="granted"></ul>
+            <button type="button" id="btn-grant-all" class="btn" data-i18n="btnGrantAll"></button>
+          </div>
+          <div class="card">
+            <h3 data-i18n="sectionBackup"></h3>
+            <p class="fineprint" data-i18n="backupFineprint"></p>
+            <div class="row">
+              <button type="button" id="btn-export" class="btn" data-i18n="exportJson"></button>
+              <label class="btn file">
+                <span data-i18n="importJson"></span>
+                <input type="file" id="import-file" accept="application/json,.json" hidden />
+              </label>
+            </div>
+            <p id="backup-msg" class="msg hidden"></p>
+          </div>
+        </section>
+
+        <section id="panel-license" class="panel" aria-labelledby="license-heading">
+          <div class="card">
+            <h2 id="license-heading" data-i18n="sectionLicense"></h2>
+            <p id="account-api-warning" class="msg err hidden"></p>
+
+            <div class="pro-benefits">
+              <h3 data-i18n="proBenefitsTitle"></h3>
+              <ul class="list-check">
+                <li data-i18n="proBenefitFreeLimit"></li>
+                <li data-i18n="proBenefitUnlimited"></li>
+                <li data-i18n="proBenefitDevices"></li>
+                <li data-i18n="proBenefitPrice"></li>
+                <li data-i18n="proBenefitPrivacy"></li>
+              </ul>
+            </div>
+
+            <div id="account-guest" class="account-block">
+              <p class="fineprint" data-i18n="accountApiFineprint"></p>
+              <label class="field">
+                <span data-i18n="accountEmailLabel"></span>
+                <input type="email" id="account-email" autocomplete="username" />
+              </label>
+              <label class="field">
+                <span data-i18n="accountPasswordLabel"></span>
+                <input type="password" id="account-password" autocomplete="current-password" />
+              </label>
+              <div class="row">
+                <button type="button" id="btn-account-login" class="btn primary" data-i18n="accountLogin"></button>
+                <button type="button" id="btn-account-register" class="btn" data-i18n="accountRegister"></button>
+              </div>
+            </div>
+
+            <div id="account-user" class="account-block hidden">
+              <p>
+                <span data-i18n="accountSignedInAs"></span>
+                <strong id="account-signed-email"></strong>
+              </p>
+              <p>
+                <span data-i18n="accountCurrentTier"></span>
+                <strong id="license-status" class="status"></strong>
+              </p>
+              <div class="row">
+                <button type="button" id="btn-account-logout" class="btn" data-i18n="accountLogout"></button>
+                <button type="button" id="btn-refresh-entitlement" class="btn" data-i18n="accountRefreshEntitlement"></button>
+              </div>
+
+              <div id="order-section" class="hidden">
+                <h3 data-i18n="accountOrderSection"></h3>
+                <label class="field">
+                  <span data-i18n="accountPayChannel"></span>
+                  <select id="account-order-channel" aria-label="Payment channel">
+                    <option value="" disabled selected data-i18n="accountChannelLoading"></option>
+                  </select>
+                </label>
+                <div class="row">
+                  <button type="button" id="btn-place-order" class="btn primary" data-i18n="accountPlaceOrder"></button>
+                </div>
+                <div id="order-pending" class="hidden">
+                  <p><span data-i18n="accountOrderId"></span> <code id="order-pending-id"></code></p>
+                  <dl class="order-summary" id="order-pending-summary">
+                    <dt data-i18n="orderSummaryPlatform"></dt>
+                    <dd id="order-summary-platform">—</dd>
+                    <dt data-i18n="orderSummaryAccount"></dt>
+                    <dd id="order-summary-account">—</dd>
+                    <dt data-i18n="orderSummaryProduct"></dt>
+                    <dd id="order-summary-product">—</dd>
+                    <dt data-i18n="orderSummaryAmount"></dt>
+                    <dd id="order-summary-amount">—</dd>
+                    <dt data-i18n="orderSummaryCreatedAt"></dt>
+                    <dd id="order-summary-created-at">—</dd>
+                  </dl>
+                  <p class="fineprint" id="order-pay-hint" data-i18n="accountPayQrHint"></p>
+                  <textarea id="order-code-url" readonly rows="2" class="code-url-box"></textarea>
+                  <div class="row hidden" id="order-pay-jump-row">
+                    <button type="button" id="btn-open-alipay" class="btn primary" data-i18n="accountOpenAlipay"></button>
+                  </div>
+                  <div class="row">
+                    <button type="button" id="btn-poll-order" class="btn" data-i18n="accountPollPayment"></button>
+                  </div>
+                </div>
+              </div>
+              <div id="bind-section" class="row hidden">
+                <button type="button" id="btn-bind-device" class="btn primary" data-i18n="accountBindDevice"></button>
+              </div>
+
+              <div id="devices-section" class="hidden">
+                <h3 data-i18n="accountDevicesSection"></h3>
+                <p class="fineprint" id="current-device-id"></p>
+                <ul id="bound-devices-list" class="devices-list"></ul>
+              </div>
+
+              <h3 data-i18n="accountHistorySection"></h3>
+              <button type="button" id="btn-load-orders" class="btn" data-i18n="accountLoadOrders"></button>
+              <div class="order-history-wrap">
+                <table id="order-history-table" class="order-history hidden">
+                  <thead>
+                    <tr>
+                      <th data-i18n="orderColPlatform"></th>
+                      <th data-i18n="orderColAccount"></th>
+                      <th data-i18n="orderColProduct"></th>
+                      <th data-i18n="orderColAmount"></th>
+                      <th data-i18n="orderColOrderInfo"></th>
+                    </tr>
+                  </thead>
+                  <tbody id="order-history"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    </div>
+    <script type="module" src="/src/options/main.ts"></script>
+  </body>
+</html>

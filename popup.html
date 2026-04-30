@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="/src/popup/style.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <header class="header">
+        <div class="header-brand">
+          <img
+            id="popup-logo"
+            class="header-logo"
+            width="36"
+            height="36"
+            decoding="async"
+            alt=""
+          />
+          <div class="header-titles">
+            <div id="popup-brand" class="header-product-name"></div>
+            <h1 id="popup-heading" class="header-hint"></h1>
+          </div>
+        </div>
+        <a class="link" id="open-options" href="#" data-i18n="openOptions"></a>
+      </header>
+      <section class="save">
+        <div class="save-fields" id="save-fields">
+          <input
+            type="text"
+            id="new-name"
+            data-i18n-placeholder="placeholderNewName"
+            maxlength="120"
+          />
+          <select id="new-group"></select>
+        </div>
+        <div class="save-actions">
+          <button type="button" id="btn-save" class="btn primary" data-i18n="saveCurrentTab"></button>
+          <button type="button" id="btn-upgrade" class="btn primary hidden"></button>
+          <button type="button" id="btn-clear-site" class="btn btn-clear" data-i18n="clearCurrentSiteCookies"></button>
+        </div>
+      </section>
+      <p class="error hidden" id="error"></p>
+      <ul class="list" id="profile-list"></ul>
+    </main>
+    <script type="module" src="/src/popup/main.ts"></script>
+  </body>
+</html>

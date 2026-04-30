@@ -1,0 +1,274 @@
+{
+  "extName": {
+    "message": "Multi-Account Switch (Cookie Profiles)"
+  },
+  "extDescription": {
+    "message": "Save and switch site login sessions via cookie snapshots. Optional paid plan (account on your backend) unlocks higher limits."
+  },
+  "popupTitle": { "message": "Multi-Account Switch" },
+  "openOptions": { "message": "Options" },
+  "openWebsite": { "message": "Website" },
+  "hintPro": { "message": "Pro — unlimited accounts." },
+  "hintFree": {
+    "message": "Free $1/$2 accounts",
+    "placeholders": {
+      "1": { "content": "$1", "example": "2" },
+      "2": { "content": "$2", "example": "5" }
+    }
+  },
+  "emptyProfiles": {
+    "message": "No profiles yet. Open a site, enter a name, and click Save."
+  },
+  "switchBtn": { "message": "Switch" },
+  "deleteBtn": { "message": "Delete" },
+  "profileMeta": {
+    "message": "$1 · $2 · $3 cookies",
+    "placeholders": {
+      "1": { "content": "$1", "example": "Work" },
+      "2": { "content": "$2", "example": "example.com" },
+      "3": { "content": "$3", "example": "12" }
+    }
+  },
+  "confirmDeleteProfile": {
+    "message": "Delete profile \"$1\"?",
+    "placeholders": {
+      "1": { "content": "$1", "example": "My account" }
+    }
+  },
+  "ungrouped": { "message": "Ungrouped" },
+  "unknownGroup": { "message": "Unknown group" },
+  "placeholderNewName": {
+    "message": "Name for this tab’s login state"
+  },
+  "saveCurrentTab": { "message": "Save this tab’s login state" },
+  "btnUpgradeAccounts": { "message": "Upgrade account" },
+  "clearCurrentSiteCookies": { "message": "Sign out from this site" },
+  "confirmClearSiteCookies": {
+    "message": "This clears cookies for $1 in this browser — you’ll usually be signed out. Continue?",
+    "placeholders": {
+      "1": { "content": "$1", "example": "example.com" }
+    }
+  },
+  "clearSiteCookiesDone": { "message": "Signed out." },
+  "clearSiteCookiesSomeFailed": {
+    "message": "($1 could not be removed, e.g. partitioned cookies.)",
+    "placeholders": {
+      "1": { "content": "$1", "example": "2" }
+    }
+  },
+  "optionsTitle": { "message": "Multi-Account Switch — Options" },
+  "pageTitle": { "message": "Multi-Account Switch" },
+  "menuSites": { "message": "Sites" },
+  "menuGroups": { "message": "Groups" },
+  "menuSettings": { "message": "Settings" },
+  "menuLicense": { "message": "Upgrade account" },
+  "navAriaOptions": { "message": "Options sections" },
+  "topBarTierFree": { "message": "Free" },
+  "topBarTierPro": { "message": "Pro" },
+  "topBarFreeHint": { "message": "Open account upgrade" },
+  "sectionSites": { "message": "Sites" },
+  "renameGroup": { "message": "Rename" },
+  "renameGroupPrompt": {
+    "message": "Rename group \"$1\" to:",
+    "placeholders": {
+      "1": { "content": "$1", "example": "Work" }
+    }
+  },
+  "sectionLanguage": { "message": "Display language" },
+  "languageHint": {
+    "message": "By default the UI follows your browser language. You can pin English or Simplified Chinese; this page updates immediately when you change it."
+  },
+  "languageLabel": { "message": "Language" },
+  "langAuto": { "message": "Auto (match browser)" },
+  "langEnglish": { "message": "English" },
+  "langZhCn": { "message": "简体中文" },
+  "lead": {
+    "message": "Cookie-based session snapshots stay on this device. Grant per-site access when prompted. Some sites may require additional storage beyond cookies to fully switch accounts."
+  },
+  "filterSitesPlaceholder": {
+    "message": "Search site name, host, or URL…"
+  },
+  "filterGroupLabel": { "message": "Group" },
+  "filterGroupAll": { "message": "All groups" },
+  "sitesFilterNoMatch": { "message": "No sites match the current filters." },
+  "sectionLicense": { "message": "Account & upgrade" },
+  "accountApiFineprint": {
+    "message": "Sign in or create an account to upgrade to Pro."
+  },
+  "proBenefitsTitle": { "message": "Pro benefits" },
+  "proBenefitFreeLimit": { "message": "Free plan stores up to 5 account snapshots." },
+  "proBenefitUnlimited": { "message": "Pro unlocks unlimited snapshots and unlimited groups." },
+  "proBenefitDevices": { "message": "A Pro account can bind up to 3 devices (browsers) at the same time." },
+  "proBenefitPrice": { "message": "One-time ¥5 CNY (see in-extension copy for details)." },
+  "proBenefitPrivacy": { "message": "Data still lives in your local browser storage." },
+  "accountEmailLabel": { "message": "Email" },
+  "accountPasswordLabel": { "message": "Password" },
+  "accountLogin": { "message": "Sign in" },
+  "accountRegister": { "message": "Register" },
+  "accountLogout": { "message": "Sign out" },
+  "accountSignedInAs": { "message": "Signed in as" },
+  "accountCurrentTier": { "message": "Current plan" },
+  "accountRefreshEntitlement": { "message": "Refresh subscription status" },
+  "accountOrderSection": { "message": "New order" },
+  "accountPayChannel": { "message": "Payment channel" },
+  "accountChannelWechat": { "message": "WeChat Pay" },
+  "accountChannelAlipay": { "message": "Alipay" },
+  "accountChannelLoading": { "message": "Loading…" },
+  "accountChannelUnavailable": { "message": "No payment channel available" },
+  "accountOfflinePayHint": { "message": "Offline channel: follow the offline payment instructions, then contact the administrator to confirm the transfer." },
+  "accountPlaceOrder": { "message": "Create order & get pay link" },
+  "accountOrderId": { "message": "Order id" },
+  "accountPayQrHint": {
+    "message": "Open this link or QR on your phone to pay. Then use “Check payment” until the order is paid."
+  },
+  "accountAlipayPageHint": { "message": "Click the button below to open Alipay checkout. After paying, return here and click \"Check payment\" until the order is marked as Paid." },
+  "accountPayWaitingHint": { "message": "Payment page opened in a new tab. This page will refresh automatically once payment completes—no need to do anything else." },
+  "accountOpenAlipay": { "message": "Pay on Alipay" },
+  "accountAlipayPopupBlocked": { "message": "The browser blocked the Alipay window. Please allow popups on this page and try again." },
+  "orderSummaryPlatform": { "message": "Platform (payment channel)" },
+  "orderSummaryAccount": { "message": "Login account" },
+  "orderSummaryProduct": { "message": "Product" },
+  "orderSummaryAmount": { "message": "Amount" },
+  "orderSummaryCreatedAt": { "message": "Created at" },
+  "accountPollPayment": { "message": "Check payment" },
+  "accountBindDevice": { "message": "Bind this browser (device)" },
+  "accountHistorySection": { "message": "Order history" },
+  "accountLoadOrders": { "message": "Load orders" },
+  "orderColPlatform": { "message": "Payment channel" },
+  "orderColAccount": { "message": "Account" },
+  "orderColProduct": { "message": "Product" },
+  "orderColStatus": { "message": "Status" },
+  "orderColAmount": { "message": "Amount / Status" },
+  "orderColMerchantNo": { "message": "Order no" },
+  "orderColPaidAt": { "message": "Paid at" },
+  "orderColCreatedAt": { "message": "Created at" },
+  "orderColOrderInfo": { "message": "Order no / Created at" },
+  "orderStatusPending": { "message": "Pending" },
+  "orderStatusPaid": { "message": "Paid" },
+  "orderStatusClosed": { "message": "Closed" },
+  "orderStatusRefunded": { "message": "Refunded" },
+  "orderTimeCreated": { "message": "Created" },
+  "orderTimePaid": { "message": "Paid" },
+  "orderTimeRefunded": { "message": "Refunded" },
+  "orderPaidAtNone": { "message": "—" },
+  "orderHistoryEmpty": { "message": "No orders yet." },
+  "accountEnvMissing": {
+    "message": "Build is missing VITE_API_BASE_URL or VITE_EXTENSION_PRODUCT_KEY. Add a .env file and rebuild."
+  },
+  "entitlementProPerpetual": { "message": "Pro (no expiry)" },
+  "entitlementNeedBind": {
+    "message": "You have an active subscription — bind this device to unlock Pro on this browser."
+  },
+  "entitlementDeviceLimit": {
+    "message": "Device limit reached for your plan. Unbind another device in the admin console or upgrade."
+  },
+  "accountPaymentConfirmed": { "message": "Payment confirmed." },
+  "accountPollTimeout": { "message": "Not paid yet or timed out. Try “Check payment” again later." },
+  "accountBindOk": { "message": "Device bound. Refresh subscription status." },
+  "licenseStatusFree": {
+    "message": "Free"
+  },
+  "licenseStatusPro": {
+    "message": "Pro until $1",
+    "placeholders": {
+      "1": { "content": "$1", "example": "12/31/2026, 3:00:00 PM" }
+    }
+  },
+  "sectionHost": { "message": "Host access" },
+  "hostFineprint": {
+    "message": "The extension only reads/writes cookies for origins you allow. Saving or switching on a site will prompt for that origin. You can pre-grant broad access below (stronger privilege — explain clearly in store listing)."
+  },
+  "btnGrantAll": { "message": "Request access to all URLs" },
+  "sectionGroups": { "message": "Groups" },
+  "sectionProfiles": { "message": "Profiles" },
+  "newGroupPlaceholder": { "message": "New group name" },
+  "addGroup": { "message": "Add group" },
+  "delete": { "message": "Delete" },
+  "noneGranted": {
+    "message": "None recorded yet (granted when you save/switch)."
+  },
+  "profileEmpty": {
+    "message": "No sites yet. Open the extension popup on a tab to save the current login state."
+  },
+  "fieldName": { "message": "Name" },
+  "fieldEntryUrl": { "message": "Entry URL" },
+  "fieldGroup": { "message": "Group" },
+  "saveChanges": { "message": "Save changes" },
+  "invalidUrl": { "message": "Invalid URL." },
+  "hostPermissionDenied": {
+    "message": "Host permission not granted; URL not updated."
+  },
+  "groupLimitAlert": {
+    "message": "Group limit reached on free plan."
+  },
+  "confirmDeleteGroup": {
+    "message": "Delete group \"$1\"? Profiles stay; their group will clear.",
+    "placeholders": {
+      "1": { "content": "$1", "example": "Work" }
+    }
+  },
+  "sectionBackup": { "message": "Backup" },
+  "backupFineprint": {
+    "message": "Export includes cookie snapshots — store the file safely."
+  },
+  "exportJson": { "message": "Export JSON" },
+  "importJson": { "message": "Import JSON" },
+  "exportStarted": { "message": "Export started." },
+  "importCompleted": { "message": "Import completed." },
+  "unlimited": { "message": "Unlimited" },
+  "errNoHttpTab": {
+    "message": "No active HTTP(S) tab. Open a web page first."
+  },
+  "errHostDeniedSave": {
+    "message": "Host permission was not granted. Allow access to save cookies for this site."
+  },
+  "errProfileLimit": {
+    "message": "Profile limit reached ($1 on free plan). Upgrade your account or remove profiles.",
+    "placeholders": {
+      "1": { "content": "$1", "example": "3" }
+    }
+  },
+  "errProfileNotFound": { "message": "Profile not found." },
+  "errHostDeniedSwitch": {
+    "message": "Host permission is required to switch cookies for this site."
+  },
+  "errInvalidJson": { "message": "Invalid JSON." },
+  "errInvalidBackup": { "message": "Invalid backup format." },
+  "errUnsupportedBackup": {
+    "message": "Unsupported backup version or missing fields."
+  },
+  "errUnknownMessage": { "message": "Unknown message type" },
+  "unnamed": { "message": "Unnamed" },
+  "dialogOk": { "message": "OK" },
+  "dialogCancel": { "message": "Cancel" },
+  "bulkDelete": { "message": "Bulk delete" },
+  "bulkDeleteSelected": {
+    "message": "Delete selected ($1)",
+    "placeholders": { "1": { "content": "$1", "example": "3" } }
+  },
+  "bulkSelectionCount": {
+    "message": "$1 selected",
+    "placeholders": { "1": { "content": "$1", "example": "2" } }
+  },
+  "confirmBulkDeleteProfiles": {
+    "message": "Delete the $1 selected profile(s)? This cannot be undone.",
+    "placeholders": { "1": { "content": "$1", "example": "3" } }
+  },
+  "bulkDeleteDone": {
+    "message": "Deleted $1 profile(s).",
+    "placeholders": { "1": { "content": "$1", "example": "3" } }
+  },
+  "accountDevicesSection": { "message": "Bound devices" },
+  "accountDeviceCurrent": { "message": "This device" },
+  "accountDevicesEmpty": { "message": "No devices bound yet." },
+  "accountCurrentDeviceId": {
+    "message": "This device ID: $1",
+    "placeholders": { "1": { "content": "$1", "example": "a1b2c3d4..." } }
+  },
+  "accountDeviceBoundAt": {
+    "message": "Bound $1",
+    "placeholders": { "1": { "content": "$1", "example": "2026-04-20 15:30" } }
+  },
+  "accountAutoBoundHint": { "message": "This device has been bound automatically." },
+  "accountChannelTest": { "message": "Test payment (dev only)" }
+}

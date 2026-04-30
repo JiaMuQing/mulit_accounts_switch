@@ -1,0 +1,274 @@
+{
+  "extName": {
+    "message": "多账号切换（Cookie 配置）"
+  },
+  "extDescription": {
+    "message": "通过 Cookie 快照保存并切换网站登录会话。可选付费方案（连接你的后台账号）解锁更高额度。"
+  },
+  "popupTitle": { "message": "多账号切换" },
+  "openOptions": { "message": "选项" },
+  "openWebsite": { "message": "官网" },
+  "hintPro": { "message": "专业版 — 账号数量不限。" },
+  "hintFree": {
+    "message": "免费版 $1/$2 个账号",
+    "placeholders": {
+      "1": { "content": "$1", "example": "2" },
+      "2": { "content": "$2", "example": "5" }
+    }
+  },
+  "emptyProfiles": {
+    "message": "暂无配置。打开网页、输入名称后点击保存。"
+  },
+  "switchBtn": { "message": "切换" },
+  "deleteBtn": { "message": "删除" },
+  "profileMeta": {
+    "message": "$1 · $2 · $3 个 Cookie",
+    "placeholders": {
+      "1": { "content": "$1", "example": "工作" },
+      "2": { "content": "$2", "example": "example.com" },
+      "3": { "content": "$3", "example": "12" }
+    }
+  },
+  "confirmDeleteProfile": {
+    "message": "删除配置「$1」？",
+    "placeholders": {
+      "1": { "content": "$1", "example": "我的账号" }
+    }
+  },
+  "ungrouped": { "message": "未分组" },
+  "unknownGroup": { "message": "未知分组" },
+  "placeholderNewName": {
+    "message": "本页登录状态的名称"
+  },
+  "saveCurrentTab": { "message": "保存本页登录状态" },
+  "btnUpgradeAccounts": { "message": "升级账号" },
+  "clearCurrentSiteCookies": { "message": "退出当前网站登录" },
+  "confirmClearSiteCookies": {
+    "message": "将清除网站「$1」在本浏览器中的 Cookie（登录状态通常会失效）。确定继续？",
+    "placeholders": {
+      "1": { "content": "$1", "example": "example.com" }
+    }
+  },
+  "clearSiteCookiesDone": { "message": "已退出登录。" },
+  "clearSiteCookiesSomeFailed": {
+    "message": "（另有 $1 个未能移除，可能受分区 Cookie 等限制。）",
+    "placeholders": {
+      "1": { "content": "$1", "example": "2" }
+    }
+  },
+  "optionsTitle": { "message": "多账号切换 — 选项" },
+  "pageTitle": { "message": "多账号切换" },
+  "menuSites": { "message": "站点" },
+  "menuGroups": { "message": "分组" },
+  "menuSettings": { "message": "设置" },
+  "menuLicense": { "message": "升级账号" },
+  "navAriaOptions": { "message": "选项分类" },
+  "topBarTierFree": { "message": "免费版" },
+  "topBarTierPro": { "message": "专业版" },
+  "topBarFreeHint": { "message": "点击进入升级账号" },
+  "sectionSites": { "message": "站点" },
+  "renameGroup": { "message": "重命名" },
+  "renameGroupPrompt": {
+    "message": "将分组「$1」重命名为：",
+    "placeholders": {
+      "1": { "content": "$1", "example": "工作" }
+    }
+  },
+  "sectionLanguage": { "message": "界面语言" },
+  "languageHint": {
+    "message": "默认跟随浏览器语言；也可固定为英文或简体中文。更改后选项页会立即刷新文案。"
+  },
+  "languageLabel": { "message": "显示语言" },
+  "langAuto": { "message": "自动（跟随浏览器）" },
+  "langEnglish": { "message": "English" },
+  "langZhCn": { "message": "简体中文" },
+  "lead": {
+    "message": "基于 Cookie 的会话快照仅保存在本机。按提示授予对应站点访问权限。部分网站可能还依赖 Cookie 以外的存储，仅换 Cookie 未必能完全切换账号。"
+  },
+  "filterSitesPlaceholder": {
+    "message": "搜索站点名称、域名或网址…"
+  },
+  "filterGroupLabel": { "message": "分组筛选" },
+  "filterGroupAll": { "message": "全部分组" },
+  "sitesFilterNoMatch": { "message": "没有符合当前筛选的站点。" },
+  "sectionLicense": { "message": "账号与升级" },
+  "accountApiFineprint": {
+    "message": "登录或注册账号即可升级到专业版。"
+  },
+  "proBenefitsTitle": { "message": "专业版权益" },
+  "proBenefitFreeLimit": { "message": "免费版最多保存 5 个账号快照。" },
+  "proBenefitUnlimited": { "message": "专业版解锁无限账号快照与无限分组。" },
+  "proBenefitDevices": { "message": "专业版账号最多可同时绑定 3 台设备（即 3 个浏览器）。" },
+  "proBenefitPrice": { "message": "一次性 5 元，以扩展内说明为准。" },
+  "proBenefitPrivacy": { "message": "数据仍保存在本机浏览器存储中。" },
+  "accountEmailLabel": { "message": "邮箱" },
+  "accountPasswordLabel": { "message": "密码" },
+  "accountLogin": { "message": "登录" },
+  "accountRegister": { "message": "注册" },
+  "accountLogout": { "message": "退出登录" },
+  "accountSignedInAs": { "message": "当前账号" },
+  "accountCurrentTier": { "message": "当前版本" },
+  "accountRefreshEntitlement": { "message": "刷新订阅状态" },
+  "accountOrderSection": { "message": "新订单" },
+  "accountPayChannel": { "message": "支付渠道" },
+  "accountChannelWechat": { "message": "微信支付" },
+  "accountChannelAlipay": { "message": "支付宝" },
+  "accountChannelLoading": { "message": "加载中…" },
+  "accountChannelUnavailable": { "message": "暂无可用支付渠道" },
+  "accountOfflinePayHint": { "message": "线下支付渠道：请按提示完成支付，之后联系管理员确认到账。" },
+  "accountPlaceOrder": { "message": "下单并获取支付链接" },
+  "accountOrderId": { "message": "订单号" },
+  "accountPayQrHint": {
+    "message": "用手机打开下方链接或扫码完成支付，然后多次点击「查询支付状态」直至订单变为已支付。"
+  },
+  "accountAlipayPageHint": { "message": "点下方按钮跳转支付宝网页付款。付款后关闭支付宝页面回到本页，多次点击「查询支付状态」直至订单变为已支付。" },
+  "accountPayWaitingHint": { "message": "支付页面已在新标签页打开。完成支付后本页会自动刷新订阅状态，无需手动操作。" },
+  "accountOpenAlipay": { "message": "去支付宝付款" },
+  "accountAlipayPopupBlocked": { "message": "浏览器拦截了支付宝窗口。请允许本页弹窗后重试。" },
+  "orderSummaryPlatform": { "message": "平台标识（支付渠道）" },
+  "orderSummaryAccount": { "message": "登录账号" },
+  "orderSummaryProduct": { "message": "商品内容" },
+  "orderSummaryAmount": { "message": "商品金额" },
+  "orderSummaryCreatedAt": { "message": "创建时间" },
+  "accountPollPayment": { "message": "查询支付状态" },
+  "accountBindDevice": { "message": "绑定本浏览器（设备）" },
+  "accountHistorySection": { "message": "历史订单" },
+  "accountLoadOrders": { "message": "加载订单列表" },
+  "orderColPlatform": { "message": "支付渠道" },
+  "orderColAccount": { "message": "登录账号" },
+  "orderColProduct": { "message": "商品内容" },
+  "orderColStatus": { "message": "支付状态" },
+  "orderColAmount": { "message": "金额 / 状态" },
+  "orderColMerchantNo": { "message": "订单号" },
+  "orderColPaidAt": { "message": "支付时间" },
+  "orderColCreatedAt": { "message": "下单时间" },
+  "orderColOrderInfo": { "message": "订单号 / 下单时间" },
+  "orderStatusPending": { "message": "待支付" },
+  "orderStatusPaid": { "message": "已支付" },
+  "orderStatusClosed": { "message": "已关闭" },
+  "orderStatusRefunded": { "message": "已退款" },
+  "orderTimeCreated": { "message": "下单" },
+  "orderTimePaid": { "message": "支付" },
+  "orderTimeRefunded": { "message": "退款" },
+  "orderPaidAtNone": { "message": "—" },
+  "orderHistoryEmpty": { "message": "暂无订单。" },
+  "accountEnvMissing": {
+    "message": "当前构建未设置 VITE_API_BASE_URL 或 VITE_EXTENSION_PRODUCT_KEY。请添加 .env 后重新构建。"
+  },
+  "entitlementProPerpetual": { "message": "专业版（长期有效）" },
+  "entitlementNeedBind": {
+    "message": "您已有有效权益 — 请绑定本设备后在本浏览器解锁专业版。"
+  },
+  "entitlementDeviceLimit": {
+    "message": "设备数已达上限。请在管理后台解绑其他设备或升级方案。"
+  },
+  "accountPaymentConfirmed": { "message": "已确认支付。" },
+  "accountPollTimeout": { "message": "尚未支付或等待超时，可稍后再点「查询支付状态」。" },
+  "accountBindOk": { "message": "设备已绑定，请刷新订阅状态。" },
+  "licenseStatusFree": {
+    "message": "免费版"
+  },
+  "licenseStatusPro": {
+    "message": "专业版有效期至 $1",
+    "placeholders": {
+      "1": { "content": "$1", "example": "2026/12/31 15:00:00" }
+    }
+  },
+  "sectionHost": { "message": "站点访问权限" },
+  "hostFineprint": {
+    "message": "扩展仅能在您允许的源上读写 Cookie。保存或切换某站点时会请求该源权限。也可在下方预先授予广泛访问（权限更高，上架时需说明用途）。"
+  },
+  "btnGrantAll": { "message": "请求访问所有网址" },
+  "sectionGroups": { "message": "分组" },
+  "sectionProfiles": { "message": "配置" },
+  "newGroupPlaceholder": { "message": "新分组名称" },
+  "addGroup": { "message": "添加分组" },
+  "delete": { "message": "删除" },
+  "noneGranted": {
+    "message": "暂无记录（保存或切换站点时会显示已授权项）。"
+  },
+  "profileEmpty": {
+    "message": "暂无站点。在网页标签页打开扩展弹窗即可保存当前登录状态。"
+  },
+  "fieldName": { "message": "名称" },
+  "fieldEntryUrl": { "message": "入口网址" },
+  "fieldGroup": { "message": "分组" },
+  "saveChanges": { "message": "保存更改" },
+  "invalidUrl": { "message": "网址无效。" },
+  "hostPermissionDenied": {
+    "message": "未授予站点权限，网址未更新。"
+  },
+  "groupLimitAlert": {
+    "message": "已达免费版分组数量上限。"
+  },
+  "confirmDeleteGroup": {
+    "message": "删除分组「$1」？已有配置会保留，但会取消与该分组的关联。",
+    "placeholders": {
+      "1": { "content": "$1", "example": "工作" }
+    }
+  },
+  "sectionBackup": { "message": "备份" },
+  "backupFineprint": {
+    "message": "导出内容包含 Cookie 快照，请妥善保管文件。"
+  },
+  "exportJson": { "message": "导出 JSON" },
+  "importJson": { "message": "导入 JSON" },
+  "exportStarted": { "message": "已开始导出。" },
+  "importCompleted": { "message": "导入完成。" },
+  "unlimited": { "message": "不限" },
+  "errNoHttpTab": {
+    "message": "没有可用的 HTTP(S) 标签页，请先打开网页。"
+  },
+  "errHostDeniedSave": {
+    "message": "未授予站点权限，无法保存该站的 Cookie。"
+  },
+  "errProfileLimit": {
+    "message": "已达配置数量上限（免费版 $1 个）。请升级账号或删除部分配置。",
+    "placeholders": {
+      "1": { "content": "$1", "example": "3" }
+    }
+  },
+  "errProfileNotFound": { "message": "找不到该配置。" },
+  "errHostDeniedSwitch": {
+    "message": "切换该站 Cookie 需要站点访问权限。"
+  },
+  "errInvalidJson": { "message": "JSON 无效。" },
+  "errInvalidBackup": { "message": "备份格式无效。" },
+  "errUnsupportedBackup": {
+    "message": "不支持的备份版本或缺少字段。"
+  },
+  "errUnknownMessage": { "message": "未知的消息类型" },
+  "unnamed": { "message": "未命名" },
+  "dialogOk": { "message": "确定" },
+  "dialogCancel": { "message": "取消" },
+  "bulkDelete": { "message": "批量删除" },
+  "bulkDeleteSelected": {
+    "message": "删除选中（$1）",
+    "placeholders": { "1": { "content": "$1", "example": "3" } }
+  },
+  "bulkSelectionCount": {
+    "message": "已选 $1 项",
+    "placeholders": { "1": { "content": "$1", "example": "2" } }
+  },
+  "confirmBulkDeleteProfiles": {
+    "message": "确认删除选中的 $1 个站点账号？此操作不可撤销。",
+    "placeholders": { "1": { "content": "$1", "example": "3" } }
+  },
+  "bulkDeleteDone": {
+    "message": "已删除 $1 项。",
+    "placeholders": { "1": { "content": "$1", "example": "3" } }
+  },
+  "accountDevicesSection": { "message": "已绑定设备" },
+  "accountDeviceCurrent": { "message": "本机" },
+  "accountDevicesEmpty": { "message": "暂无绑定设备。" },
+  "accountCurrentDeviceId": {
+    "message": "本机标识：$1",
+    "placeholders": { "1": { "content": "$1", "example": "a1b2c3d4..." } }
+  },
+  "accountDeviceBoundAt": {
+    "message": "绑定于 $1",
+    "placeholders": { "1": { "content": "$1", "example": "2026-04-20 15:30" } }
+  },
+  "accountAutoBoundHint": { "message": "已自动绑定本机。" },
+  "accountChannelTest": { "message": "测试支付（仅联调）" }
+}
